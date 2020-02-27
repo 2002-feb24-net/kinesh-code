@@ -1,0 +1,15 @@
+$ cd /c/revature
+$ git clone https://github.com/2002-feb24-net/trainer-code
+$ git clone
+$ git pull
+$ cd triner-code
+$ dotnet new console -o helloworld
+$ dotnet run -p Helloworld
+
+
+dotnet new console -n BranchesAndLoops -o .  to make a new files
+
+
+
+
+
