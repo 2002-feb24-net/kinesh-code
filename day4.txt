@@ -1,0 +1,34 @@
+Console.WriteLine("Enter a string:");
+string userName = Console.ReadLine();
+
+
+	git clone  website
+	cd...folder
+	git pull
+	git is 
+version control system (vcs)
+source control managment (scm) tool
+
+repository/
+	.git/
+	regular.files.txt
+
+steps: 
+	1 (make changes to repo)
+	2 (record those changes in git locally)
+		git add<path>   path means file name
+		git commit -m " description of changes"
+	3  ( upload recorded changes to remote (github))
+		git push 
+
+	if get any error then 
+steps:
+	1. copyout any files you are worried about losing
+	2. delete repo
+	3. clone 
+
+git status
+
+	
+
+

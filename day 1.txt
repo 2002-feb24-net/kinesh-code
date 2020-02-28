@@ -10,6 +10,13 @@ $ dotnet run -p Helloworld
 dotnet new console -n BranchesAndLoops -o .  to make a new files
 
 
+to create and connect with github 
+$ git config --global -e
+$ git config --global user.email "kinesh.mistry@gmail.com"
+$ git config --global user.name "kinesh mistry" 
 
 
+$ git push
+$ git add .
+$ git commit -m " add gitignore"
 
