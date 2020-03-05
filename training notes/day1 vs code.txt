@@ -1,0 +1,7 @@
+vs code
+   text editor /ide for many language
+.net core sdk
+   helps compile and run c#
+{
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
+}

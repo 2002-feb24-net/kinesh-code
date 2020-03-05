@@ -1,0 +1,59 @@
+
+			  week 1
+			dev tools
+	* vs code - alt+shift+f
+	* set up git - clone,pull,status,add,commit,push
+	* bash - pwd,cd, mkdir,rm,mv,cp,ls 
+		 (which,grep,find,echo,touch,cat) 
+		 (code,explorer,)
+		 reletive path,absolute paths,.,..,n,tab completion 
+		 (l) pipe , redirect(>), oppend(>>)
+	* PATH  
+			
+			c/
+				users/
+					FOLDER/
+						DESKTOP/
+	RELATIVE: DESKTOP /
+		  ./DESKTOP
+		  ../FOLDER/DESKTOP
+	ABSOLUTE:
+		 /C/USERS/FOLDER/DESKTOP ~/DESKTOP
+alt+shift+f for multiline select
+ctrl+/  for comment 
+$ value of path
+./   CURRENT 
+.. / ONE BACK  
+N    new file
+	
+CD/
+CD../..   
+CD-       RECENT DIRECTORY
+(l) pipe
+
+.NET is a plateform that run c# code 
+.NET framework
+.NET Core
+c# is programing language 
+we need to install
+	.NET Core SDK-dotnet new 
+		      dotnet run
+
+
+start at main methods
+methods (return type, parameter)
+variables(declare,initialize,scope)
+int,double,string,  bool,arrays(void)
+	value		interface
+variables carmelCase
+everything else pascalCase(titalcase)
+conditional ,loops(if,else,for,while,switch)
+
+string-.lenghth,[o]
+	-contains, indexof,split,toupper,tolower..,ToChararray
+arrays- new int[s],
+	new int[]{1,2}, [o]
+	.length 
+	
+
+

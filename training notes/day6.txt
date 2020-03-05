@@ -1,0 +1,99 @@
+		object oriented programing
+
+* class /object ---- releted to ----data + logic/behavior
+* static---- does not requre on object instance one copy of that
+	     thing for the whole program.
+* class members private by default can set them as public instead 
+
+
+* declaire variable ---
+	e.g. string productid;
+	     int stock;
+* methods --------
+	e.g.  public void setdefaultvalues()
+		{
+		 productid = " 1 ";
+		}
+* to creat an object----
+	 product candybar = new product();
+	 candy bar.setdefaultvalues();
+
+
+
+using System;
+
+namespace Product
+{
+    class Product
+    {
+         string ProductId;
+	     int Stock;
+         Double StarRating;
+        public void SetDefaultValues()
+        {
+            ProductId = "1";
+            Stock = 0;
+            StarRating = 5;
+        }
+        public  void SetValues(string id, int quantity, Double rating) 
+        {
+             if (quantity > 50)
+            {
+                Console.WriteLine("Error! too much quantity");
+            }
+            if (quantity < 0)
+            {
+                Console.WriteLine("Error - can't have negative quantity");
+            }
+
+           ProductId = id;
+           Stock = quantity;
+           StarRating = rating; 
+        }
+        public override string ToString()
+        {
+            return "Product"+ ProductId + ", " + Stock + " in stock," + StarRating + " star rating";
+
+        }
+    }
+}
+
+using System;
+
+namespace Product
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int candyBarAmount = GetStock("candy bar");
+            
+            Product candyBar = new Product();
+            candyBar.SetValues("1",candyBarAmount,5.0);
+            Console.WriteLine(candyBar);
+
+            int cerealAmount = GetStock("cereal");
+            Product cereal = new Product();
+            candyBar.SetValues( "21", cerealAmount, 4.5);
+            Console.WriteLine(cereal);
+        }
+        static int GetStock(string name)
+        {
+           Console.Write("Enter quantity of product " + name + ": ");
+            return int.Parse(Console.ReadLine());
+            int quantity;
+            do
+            {
+                Console.Write("Enter quantity of product " + name + ": ");
+                quantity = int.Parse(Console.ReadLine());
+            } while (quantity < 0); // if negative quantity, prompt again
+
+            // if we got this far, the user must have finally entered a positive quantity.
+            return quantity;
+        }
+    }
+}
+
+
+
+
