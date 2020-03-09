@@ -1,0 +1,40 @@
+open source repo
+|
+cloud
+|
+|
+git clone 
+----------------------
+local
+|
+v
+local copy of  your repo master
+
+git checkout -b [branches]
+|
+|
+|
+v
+future branches
+changes 
+
+git add .
+|
+|
+v
+tracing youre branches
+
+git commit -m" description  "
+|
+|
+v
+updating youre file online 
+git push
+|
+|
+v
+make a pull request they will update your repo in master
+git pull
+
+
+

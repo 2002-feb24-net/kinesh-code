@@ -1,49 +1,27 @@
+//1. Push your code to your personal code repo (e.g. mine is 2002-feb24-net/nick-code).
+//2. Make a new project named `PersonList` in a folder named `PersonList`. (So the path to theProgram.cs file will be: `<repo>/PersonList/Program.cs`).
+//3. Create a Person class to represent a person, having (1) a name, and (2) at least one other pieceof data. Do not use any public fields.
+//4. Implement 1 or more constructors, to enforce a requirement that a Person can't exist without aname.
+//5. Override ToString method, to return the name of each Person.
+
 using System;
-using System.Collections.Generic;
-using System.Text;
-
-public class Person
+namespace PersonList
 {
-    private string name;
-    private int age;
-
-    public string Name
+    class Person
     {
-        get
+        //Create a person class that has public properties for First and last names and a private property for their age.
+        // Getter & Setter
+        public string Fname { get; set; }
+        public string Lname { get; set; }
+        public int Age { get; set; }
+
+        // Make a constructor which is used to populate the properties at the time of the objects creation:
+        // Public constructor
+        public Person(string fname, string lname, int age)
         {
-            return this.name;
-        }
-        set
-        {
-            this.name = value;
+            Fname = fname;
+            Lname = lname;
+            Age = age;
         }
     }
-
-    public int Age
-    {
-        get
-        {
-            return this.age;
-        }
-
-        set
-        {
-            this.age = value;
-        
-        }
-    }
-            public String toString() 
-            {
-                return "name: " + Name + " Age: " + age;
-            }
-
-            public String getLast() 
-            {
-               return Name;
-            }
-
-   //The main difference between bubble sort and insertion sort is
-  // that bubble sort performs sorting by checking the neighboring data elements and swapping 
-  //them if they are in wrong order while insertion sort performs sorting by transferring one element 
-  //to a partially sorted array at a time.
 }
