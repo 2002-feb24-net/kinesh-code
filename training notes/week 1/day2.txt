@@ -1,0 +1,23 @@
+		class and member
+static can have  *	    *
+abstract 	 *	    *
+virtual		 X	    *
+override	 X   	    *
+sealed		 *	    *
+partial          *          *
+const 		 X          *
+readonly	 X	    *
+
+
+class(non static  )----- fields ,property  and methods( static ) that make object.
+                      
+class base{
+virtual void y(){....}
+}
+
+class derived: base{
+override void y(){base.y();}
+}
+
+
+

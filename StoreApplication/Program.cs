@@ -1,19 +1,17 @@
 ﻿using System;
-
 namespace StoreApplication
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            Console.WriteLine("!Good Morning!");
-            Console.WriteLine("****My first Store Application!****");
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
-        
-
-
-
-
-    
     }
 }
