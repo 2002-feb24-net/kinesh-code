@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\KINES\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\KINES\\.nuget\\packages"
+    ]
+  }
+}
